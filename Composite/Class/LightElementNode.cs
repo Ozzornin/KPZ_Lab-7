@@ -104,5 +104,9 @@ namespace Composite.Class
                 return $"<{LightName}{classAttr}{singleAttr}>";
             }
         }
+        public override string ToString()
+        {
+            return LightName;
+        }
     }
 }

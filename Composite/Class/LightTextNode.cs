@@ -50,5 +50,9 @@ namespace Composite.Class
         {
             
         }
+        public override string ToString()
+        {
+            return LightName;
+        }
     }
 }
