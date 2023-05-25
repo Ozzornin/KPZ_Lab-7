@@ -8,12 +8,15 @@ namespace Composite.Class
 {
     public interface ILightNode
     {
+        public object Value { get; set; }
         public string InnerHTML(int level = 0);
-        public string OuterHTML(int level =0);
+        public string OuterHTML(int level = 0);
         public void AppendChild(ILightNode node);
         public void ReplaceChild(ILightNode oldNode, ILightNode newNode);
         public void RemoveChild(ILightNode node);
         public void InsertBefore(ILightNode node, ILightNode refNode);
         public ILightNode Clone();
+        public string ToString();
+        
     }
 }

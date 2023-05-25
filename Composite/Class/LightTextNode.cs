@@ -8,6 +8,7 @@ namespace Composite.Class
 {
     public class LightTextNode : ILightNode
     {
+        public object Value { get; set; }
         public string LightName { get; set; }
         private string _text;
 
@@ -49,6 +50,10 @@ namespace Composite.Class
         public void ReplaceChild(ILightNode oldNode, ILightNode newNode)
         {
             
+        }
+        public override string ToString()
+        {
+            return LightName;
         }
     }
 }
