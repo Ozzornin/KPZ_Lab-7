@@ -3,6 +3,15 @@ using Composite.Observer;
 
 var container = new HandlerContainer();
 
+//string path = "https://www.example.com"; // Приклад URL
+string path = "C:\\folder\\file.txt";
+
+ILightNode imag = new LightImageNode(path);
+
+Console.WriteLine(imag.Value);
+
+
+/*
 ILightNode parent = new LightElementNode("div", "block", false);
 
 container.AddEventHandler(parent, NodeEvents.click, new ChildObserver());
@@ -17,6 +26,7 @@ return;
 
 ILightNode table = new LightElementNode("table", "block", false);
 ILightNode tr = new LightElementNode("tr", "inline", false);
+
 ILightNode td = new LightElementNode("td", "inline", false);
 td.AppendChild(new LightTextNode("p", "p1"));
 tr.AppendChild(td);
@@ -30,5 +40,5 @@ Console.WriteLine();
 
 
 tr.RemoveChild(td);
-Console.WriteLine(parent.OuterHTML());
+Console.WriteLine(parent.OuterHTML());*/
 

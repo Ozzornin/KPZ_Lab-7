@@ -8,6 +8,7 @@ namespace Composite.Class
 {
     public class LightElementNode : ILightNode
     {
+        public object Value { get; set; }
         public string LightName { get; set; }
         public string LightType { get; set; }
         public bool IsSingle { get; set; }
